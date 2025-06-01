@@ -1,80 +1,37 @@
-# Property Backend API Documentation
+# 🏡 Property Listing Backend
 
-This backend provides a RESTful API for managing property resources.
+A fully-featured backend system for managing real estate property listings. Built with **Node.js**, **TypeScript**, **MongoDB**, and **Redis**, it supports:
 
-## Base URL
-
-```
-/api/properties
-```
-
----
-
-## Routes
-
-### 1. Get All Properties
-
-- **Endpoint:** `GET /api/properties`
-- **Auth:** None
-- **Description:** Retrieve a list of all properties.
-- **Response:**  
-  - `200 OK` – Array of property objects
+- Property CRUD
+- Advanced Filtering
+- User Authentication
+- Favorites
+- Deployment Ready
 
 ---
 
-### 2. Get Property By ID
+## 🚀 Features
 
-- **Endpoint:** `GET /api/properties/:id`
-- **Auth:** None
-- **Description:** Retrieve a single property by its ID.
-- **Params:**  
-  - `id` (string) – Property ID
-- **Response:**  
-  - `200 OK` – Property object  
-  - `404 Not Found` – If property does not exist
+- ✅ Property CRUD (Create, Read, Update, Delete)
+- 🔍 Advanced filtering on 10+ attributes
+- 👤 User registration & login (email/password)
+- ❤️ Favorite properties (add/remove/list)
+- ⚡ Redis caching for optimized performance
+- 🌐 Deployed via Render/Vercel 
 
 ---
 
-### 3. Create Property
+## 📦 Tech Stack
 
-- **Endpoint:** `POST /api/properties`
-- **Auth:** Required (Bearer Token)
-- **Description:** Create a new property.
-- **Body:**  
-  - JSON object with property details (see your model for required fields)
-- **Response:**  
-  - `201 Created` – Created property object  
-  - `401 Unauthorized` – If token is missing/invalid
-
----
-
-### 4. Update Property
-
-- **Endpoint:** `PUT /api/properties/:id`
-- **Auth:** Required (Bearer Token)
-- **Description:** Update an existing property by ID.
-- **Params:**  
-  - `id` (string) – Property ID
-- **Body:**  
-  - JSON object with updated property fields
-- **Response:**  
-  - `200 OK` – Updated property object  
-  - `401 Unauthorized` – If token is missing/invalid  
-  - `404 Not Found` – If property does not exist
-
----
-
-### 5. Delete Property
-
-- **Endpoint:** `DELETE /api/properties/:id`
-- **Auth:** Required (Bearer Token)
-- **Description:** Delete a property by ID.
-- **Params:**  
-  - `id` (string) – Property ID
-- **Response:**  
-  - `200 OK` – Success message  
-  - `401 Unauthorized` – If token is missing/invalid  
-  - `404 Not Found` – If property does not exist
+| Tech           | Use Case                           |
+|----------------|------------------------------------|
+| **Node.js**    | Runtime                            |
+| **TypeScript** | Type safety                        |
+| **MongoDB**    | Database for users & properties    |
+| **Redis**      | Caching layer                      |
+| **Express**    | REST API framework                 |
+| **JWT**        | Authentication                     |
+| **Mongoose**   | ODM for MongoDB                    |
 
 ---
 
