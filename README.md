@@ -17,7 +17,7 @@ A fully-featured backend system for managing real estate property listings. Buil
 - 👤 User registration & login (email/password)
 - ❤️ Favorite properties (add/remove/list)
 - ⚡ Redis caching for optimized performance
-- 🌐 Deployed via Render/Vercel 
+- 🌐 Deployed via Render (https://property-backend-1-5bxf.onrender.com/ ) 
 
 ---
 
