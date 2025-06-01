@@ -43,7 +43,6 @@ POST |	/api/auth/register |	Register a new user |
 POST |	/api/auth/login	| Login with credentials |
 
 ## 🏠 Properties
-
 | Method	| Endpoint| 	Description |	Auth Required |
 | ------- |---------|---------------|-------------|
 GET	| /api/properties	| Get all properties with filters|	❌
@@ -51,4 +50,11 @@ GET	| /api/properties/:id	| Get a single property by ID	|❌
 POST	| /api/properties	| Create a new property|	✅(Owner only)
 PATCH	| /api/properties/:id	| Update property by ID	|✅ (Owner only)
 DELETE	| /api/properties/:id	| Delete property by ID|	✅ (Owner only)
+
+## ❤️ Favorites
+| Method |	Endpoint | 	Description | 	Auth Required |
+|--------| ----------| -------------| -----------------|
+POST	| /api/favorites/|	Add property to favorites|	✅
+DELETE	| /api/favorites/:propertyId |	Remove from favorites|	✅
+GET 	|/api/favorites	|List user's favorites |	✅
 
